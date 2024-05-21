@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Vitrine extends Model
 {
     use HasFactory;
+    protected $filablle = [
+        'img-desk',
+        'img-mob',
+        'title',
+        'status'
+    ];
 }

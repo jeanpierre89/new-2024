@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('vitrines', function (Blueprint $table) {
             $table->id();
+            $table->string('img_desk');
+            $table->string('img_mob');
+            $table->string('title')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

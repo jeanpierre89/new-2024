@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('contatos', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
+            $table->longText('message')->nullable();
+            $table->boolean('read')->default(false);
             $table->timestamps();
         });
     }
